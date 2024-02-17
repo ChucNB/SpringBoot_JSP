@@ -22,12 +22,6 @@
 
                 <sf:form modelAttribute="obj" action="/admin/quan-ly-mau-sac/update/${obj.id}" method="post">
                     <div class="mt-3">
-                        <label class="form-label">ID</label>
-                        <sf:input class="form-control" path="id"/>
-                        <sf:errors class="form-text text-danger" path="id"/>
-                    </div>
-
-                    <div class="mt-3">
                         <label class="form-label">Mã màu sắc</label>
                         <sf:input class="form-control" path="ma"/>
                         <sf:errors class="form-text text-danger" path="ma"/>
@@ -41,12 +35,10 @@
 
                     <div class="mt-3">
                         <label class="form-label">Trạng thái</label>
-                        <sf:select path="trangThai">
-                            <sf:option value="null">---Chọn---</sf:option>
+                        <sf:select class="form-select" path="trangThai">
                             <sf:option value="1">Còn hàng</sf:option>
                             <sf:option value="0">Hết hàng</sf:option>
-                            <sf:option value="-1">Ngưng bán</sf:option>
-                        </sf:select>>
+                        </sf:select>
                         <sf:errors class="form-text text-danger" path="trangThai"/>
                     </div>
 

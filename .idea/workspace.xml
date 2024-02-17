@@ -4,13 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d332cf17-0d22-473b-aa4e-5997e25a48f8" name="Changes" comment="" />
+    <list default="true" id="d332cf17-0d22-473b-aa4e-5997e25a48f8" name="Changes" comment="Push current project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/helper/JSPHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/KhachHangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/KichThuocRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/NhanVienRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/SanPhamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/chart-area-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/chart-bar-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/chart-pie-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/datatables-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/img/error-404-monochrome.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/js/datatables-simple-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/config/DIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/config/DIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KhachHangController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KhachHangController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KichThuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KichThuocController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/NhanVienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/NhanVienController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/SanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/SanPhamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/MauSac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/MauSac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/NhanVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/SanPhamChiTiet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/SanPhamChiTiet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/MauSacRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/MauSacRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/SanPhamChiTietRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/SanPhamChiTietRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/khachHang/KhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/khachHang/KhachHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/mauSac/MauSac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/mauSac/MauSac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/nhanVien/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/nhanVien/NhanVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/sanPham/SanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/sanPham/SanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/config/DIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/config/DIController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/ChiTietSanPhamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/ChiTietSanPhamController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KhachHangController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KhachHangController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KichThuocController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KichThuocController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/MauSacController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/MauSacController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/NhanVienController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/NhanVienController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/SanPhamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/SanPhamController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/MauSac.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/MauSac.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/NhanVien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/NhanVien.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/SanPhamChiTiet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/SanPhamChiTiet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/MauSacRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/MauSacRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/SanPhamChiTietRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/SanPhamChiTietRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/khachHang/KhachHang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/khachHang/KhachHang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/mauSac/MauSac.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/mauSac/MauSac.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/nhanVien/NhanVien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/nhanVien/NhanVien.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/sanPham/SanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/sanPham/SanPham.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
     <option name="PARALLEL_COMPILATION" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -26,19 +98,29 @@
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2ayW0MeTWDUSbFPaUKxgviG0x3Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "JPA.DatabaseSchemaImportDialog": "38cf05df-97c3-40e8-b9d5-5dca67d579e0",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -50,13 +132,15 @@
     "code.cleanup.on.save": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/doanh/Downloads/Night_Run.tcx",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/doanh/IdeaProjects/assignment1/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.deploy.options",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -68,14 +152,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\hoaDon" />
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin\quan-ly-san-pham-chi-tiet" />
       <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin" />
-      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\java\com\poly\assignment1\repository\dto\nhanVien" />
-      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin\quan-ly-san-pham" />
-      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin\quan-ly-mau-sac" />
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin\quan-ly-khach-hang" />
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\java\com\poly\assignment1\repository\dto" />
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\java\com\poly\assignment1\repository\dto\khachHang" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin" />
       <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view" />
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\resources\static" />
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -84,10 +171,11 @@
       <recent name="com.poly.assignment1.repository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.poly.assignment1.repository" />
+      <recent name="com.poly.assignment1.controller" />
+      <recent name="com.poly.assignment1.repository.dto.mauSac" />
       <recent name="com.poly.assignment1.entities" />
       <recent name="com.poly.assignment1.repository.dto.hoaDonChiTiet" />
-      <recent name="com.poly.assignment1.repository.dto.hoaDon" />
-      <recent name="com.poly.assignment1.controller" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
@@ -95,6 +183,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Assignment1Application">
+    <configuration name="JSPHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.poly.assignment1.helper.JSPHelper" />
+      <module name="assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.poly.assignment1.helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.poly.assignment1.config.Test" />
       <module name="assignment1" />
@@ -130,6 +231,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JSPHelper" />
         <item itemvalue="Application.com.poly.assignment1.repository.Test" />
         <item itemvalue="Application.Test" />
       </list>
@@ -156,29 +258,48 @@
       <workItem from="1705896303187" duration="10000" />
       <workItem from="1706090025084" duration="22160000" />
       <workItem from="1706585172136" duration="100000" />
-      <workItem from="1706596905879" duration="6361000" />
+      <workItem from="1706596905879" duration="22807000" />
+      <workItem from="1706854104839" duration="7106000" />
+      <workItem from="1706861667129" duration="43278000" />
+      <workItem from="1708126251446" duration="8230000" />
     </task>
+    <task id="LOCAL-00001" summary="Push current project">
+      <option name="closed" value="true" />
+      <created>1706695933417</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706695933417</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Push current project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push current project" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KhachHangController.java</url>
-          <line>22</line>
-          <properties class="com.poly.assignment1.controller.KhachHangController" method="create">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java</url>
-          <line>115</line>
-          <properties class="com.poly.assignment1.controller.ChiTietSanPhamController" method="update">
+          <line>142</line>
+          <properties class="com.poly.assignment1.controller.ChiTietSanPhamController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -186,7 +307,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java</url>
-          <line>82</line>
+          <line>91</line>
           <properties class="com.poly.assignment1.controller.ChiTietSanPhamController" method="index">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -195,22 +316,59 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java</url>
-          <line>32</line>
+          <line>65</line>
+          <properties class="com.poly.assignment1.controller.MauSacController" method="index">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java</url>
+          <line>109</line>
+          <properties class="com.poly.assignment1.controller.MauSacController" method="edit">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java</url>
+          <line>37</line>
           <properties class="com.poly.assignment1.controller.MauSacController" method="store">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KhachHangController.java</url>
+          <line>61</line>
+          <properties class="com.poly.assignment1.controller.KhachHangController" method="index">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/view/index.jsp</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/main/resources/static/view/index.jsp</url>
+          <line>8</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/config/Test.java</url>
           <line>4</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/index.jsp</url>
+          <line>16</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,12 +20,7 @@
         <div class="card-body row">
             <div class="col-8 m-auto">
 
-                <sf:form modelAttribute="obj"  action="/admin/quan-ly-san-pham/store" method="post">
-                    <div class="mt-3">
-                        <label class="form-label">ID</label>
-                        <sf:input class="form-control" path="id"/>
-                        <sf:errors class="form-text text-danger" path="id"/>
-                    </div>
+                <sf:form modelAttribute="obj" action="/admin/quan-ly-san-pham/store" method="post">
 
                     <div class="mt-3">
                         <label class="form-label">Mã sản phẩm</label>
@@ -34,18 +29,26 @@
                     </div>
 
                     <div class="mt-3">
-                        <label class="form-label">Tên sản phẩm</label>
+                        <label class="form-label ">Tên sản phẩm</label>
                         <sf:input class="form-control" path="ten"/>
                         <sf:errors class="form-text text-danger" path="ten"/>
                     </div>
 
                     <div class="mt-3">
-                        <sf:checkbox  class="form-check-input" path="trangThai"/>
-                        <label class="form-check-label">Còn hàng</label>
+                        <label class="form-label">Trạng thái</label>
+                        <sf:select class="form-select" path="trangThai">
+                            <sf:option value="-1">---Chọn---</sf:option>
+                            <sf:option value="1">Còn hàng</sf:option>
+                            <sf:option value="0">Hết hàng</sf:option>
+                        </sf:select>
+                        <sf:errors class="form-text text-danger" path="trangThai"/>
                     </div>
 
                     <div class="mt-3 text-end">
-                        <sf:button  class="btn btn-success" >Thêm mới</sf:button>
+                        <p class="form-text text-danger">${message}</p>
+                    </div>
+                    <div class="mt-3 text-end">
+                        <sf:button class="btn btn-success">Thêm mới</sf:button>
                     </div>
                 </sf:form>
             </div>

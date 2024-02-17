@@ -21,6 +21,7 @@ public class MauSac {
     private String ten;
     @Basic
     @Column(name = "TrangThai", nullable = false)
+
     private Integer trangThai;
     @OneToMany(mappedBy = "mauSac")
     private Collection<SanPhamChiTiet> sanPhamChiTietsById;

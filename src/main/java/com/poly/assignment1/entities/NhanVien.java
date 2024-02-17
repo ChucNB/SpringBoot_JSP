@@ -15,7 +15,7 @@ public class NhanVien {
     @Column(name = "Ten", nullable = false, length = 255)
     private String ten;
     @Basic
-    @Column(name = "Ma", nullable = false, length = 255)
+    @Column(name = "Ma", unique = true, nullable = false, length = 255)
     private String ma;
     @Basic
     @Column(name = "TenDangNhap", nullable = false, length = 255)

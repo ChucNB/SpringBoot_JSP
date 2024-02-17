@@ -1,8 +1,8 @@
 package com.poly.assignment1.repository.dto.khachHang;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.PositiveOrZero;
 import lombok.*;
 
 @AllArgsConstructor
@@ -11,12 +11,12 @@ import lombok.*;
 @Setter
 @ToString
 public class KhachHang {
-    @NotNull(message = "Không được để trống trường này")
+
     private Integer id;
     @NotBlank(message = "Không được để trống trường này")
-    private String ten, maKH;
-    @NotBlank(message = "Không được để trống trường này")
-    @Pattern(message = "Vui lòng nhập đúng số điện thoại", regexp = "0\\d{9}")
+    private String ma, ten;
+    @Pattern(regexp = "^0\\d{8}$", message = "Vui lòng nhập chính xác số điện thoại")
     private String sdt;
-    private Boolean trangThai;
+    @PositiveOrZero(message = "Vui lòng chọn trạng thái")
+    private Integer trangThai;
 }

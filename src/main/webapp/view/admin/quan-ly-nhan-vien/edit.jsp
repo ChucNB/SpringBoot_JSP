@@ -14,31 +14,24 @@
 
     <div class="card col-4 m-auto mt-5">
         <div class="card-header">
-            Chỉnh sửa
+            Chỉnh sửa nhân viên
             <a href="/admin/quan-ly-nhan-vien/index" class="btn btn-primary float-end"><< Quay lại</a>
         </div>
         <div class="card-body row">
             <div class="col-8 m-auto">
 
-                <sf:form modelAttribute="obj"  action="/admin/quan-ly-nhan-vien/update/${obj.id}" method="post">
+                <sf:form modelAttribute="obj" action="/admin/quan-ly-nhan-vien/update/${obj.id}" method="post">
                     <div class="mt-3">
-                        <label class="form-label">ID</label>
-                        <sf:input class="form-control disabled" path="id"/>
-                        <sf:errors class="form-text text-danger" path="id"/>
+                        <label class="form-label">Mã nhân viên</label>
+                        <sf:input class="form-control" path="ma"/>
+                        <sf:errors class="form-text text-danger" path="ma"/>
                     </div>
 
                     <div class="mt-3">
-                        <label class="form-label">Họ và tên</label>
+                        <label class="form-label">Tên nhân viên</label>
                         <sf:input class="form-control" path="ten"/>
                         <sf:errors class="form-text text-danger" path="ten"/>
                     </div>
-
-                    <div class="mt-3">
-                        <label class="form-label">Mã nhân viên</label>
-                        <sf:input class="form-control" path="maNV"/>
-                        <sf:errors class="form-text text-danger" path="maNV"/>
-                    </div>
-
                     <div class="mt-3">
                         <label class="form-label">Tên đăng nhập</label>
                         <sf:input class="form-control" path="tenDangNhap"/>
@@ -46,17 +39,21 @@
                     </div>
                     <div class="mt-3">
                         <label class="form-label">Mật khẩu</label>
-                        <sf:input class="form-control" path="matKhau"/>
+                        <sf:input type="password" class="form-control" path="matKhau"/>
                         <sf:errors class="form-text text-danger" path="matKhau"/>
                     </div>
 
                     <div class="mt-3">
-                        <sf:checkbox  class="form-check-input" path="trangThai"/>
-                        <label class="form-check-label">Hoạt động</label>
+                        <label class="form-label">Trạng thái</label>
+                        <sf:select class="form-select" path="trangThai">
+                            <sf:option value="1">Hoạt động</sf:option>
+                            <sf:option value="0">Ngưng hoạt động</sf:option>
+                        </sf:select>
+                        <sf:errors class="form-text text-danger" path="trangThai"/>
                     </div>
 
                     <div class="mt-3 text-end">
-                        <sf:button  class="btn btn-success" >Cập nhật</sf:button>
+                        <sf:button class="btn btn-success">Cập nhật</sf:button>
                     </div>
                 </sf:form>
             </div>

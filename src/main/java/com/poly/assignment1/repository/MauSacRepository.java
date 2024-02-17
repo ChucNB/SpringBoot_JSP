@@ -9,7 +9,19 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MauSacRepository extends JpaRepository<MauSac, Integer> {
     int ACTIVE = 1;
-    int INACTIVE = -1;
+    int INACTIVE = 0;
+
 
     Page<MauSac> findByTrangThai(int trangThai, Pageable pageable);
+
+    Page<MauSac> findByTenAndTrangThai(String ten, int trangThai, Pageable pageable);
+
+    Page<MauSac> findByTen(String searchKey, Pageable pageable);
+
+
+    Object getByMaAndTen(String ma, String ten);
+
+    Page<MauSac> findByTenLike(String searchKey, Pageable pageable);
+
+    Page<MauSac> findByTenLikeAndTrangThai(String searchKey, int active, Pageable pageable);
 }

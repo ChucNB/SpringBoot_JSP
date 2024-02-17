@@ -20,18 +20,18 @@ public class DIController {
     @Bean()
     public List<KhachHang> getLSTKH() {
         List<KhachHang> lst = new ArrayList<>();
-        lst.add(new KhachHang(1, "Nguyễn Văn A", "KH01", "0123456789", true));
-        lst.add(new KhachHang(2, "Nguyễn Văn B", "KH02", "0123456789", true));
-        lst.add(new KhachHang(3, "Nguyễn Văn C", "KH03", "0123456789", true));
+        lst.add(new KhachHang(1, "Nguyễn Văn A", "KH01", "0123456789", 1));
+        lst.add(new KhachHang(2, "Nguyễn Văn B", "KH02", "0123456789", 1));
+        lst.add(new KhachHang(3, "Nguyễn Văn C", "KH03", "0123456789", 1));
         return lst;
     }
 
     @Bean()
     public List<KichThuoc> getLSTKT() {
         List<KichThuoc> lst = new ArrayList<>();
-        lst.add(new KichThuoc(1, "KT1", "Kích thước 01", true));
-        lst.add(new KichThuoc(2, "KT2", "Kích thước 02", true));
-        lst.add(new KichThuoc(3, "KT3", "Kích thước 03", true));
+        lst.add(new KichThuoc(1, "KT1", "Kích thước 01", 1));
+        lst.add(new KichThuoc(2, "KT2", "Kích thước 02", 1));
+        lst.add(new KichThuoc(3, "KT3", "Kích thước 03", 1));
         return lst;
     }
 
@@ -47,18 +47,18 @@ public class DIController {
     @Bean()
     public List<SanPham> getLSTSP() {
         List<SanPham> lst = new ArrayList<>();
-        lst.add(new SanPham(1, "SP1", "Sản phẩm 01", true));
-        lst.add(new SanPham(2, "SP2", "Sản phẩm 02", true));
-        lst.add(new SanPham(3, "SP3", "Sản phẩm 03", true));
+        lst.add(new SanPham(1, "SP1", "Sản phẩm 01", 1));
+        lst.add(new SanPham(2, "SP2", "Sản phẩm 02", 1));
+        lst.add(new SanPham(3, "SP3", "Sản phẩm 03", 1));
         return lst;
     }
 
     @Bean()
     public List<NhanVien> getLSTNV() {
         List<NhanVien> lst = new ArrayList<>();
-        lst.add(new NhanVien(1, "Nguyễn Văn A", "NVA", "NVA", "12341234", true));
-        lst.add(new NhanVien(2, "Nguyễn Văn B", "NVB", "NVB", "12341234", true));
-        lst.add(new NhanVien(3, "Nguyễn Văn C", "NVC", "NVC", "12341234", true));
+        lst.add(new NhanVien(1, "Nguyễn Văn A", "NVA", "NVA", "12341234", 1));
+        lst.add(new NhanVien(2, "Nguyễn Văn B", "NVB", "NVB", "12341234", 1));
+        lst.add(new NhanVien(3, "Nguyễn Văn C", "NVC", "NVC", "12341234", 1));
         return lst;
     }
 

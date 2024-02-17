@@ -1,6 +1,8 @@
 package com.poly.assignment1.repository.dto.kichThuoc;
 
+
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PositiveOrZero;
 import lombok.*;
 
 @AllArgsConstructor
@@ -12,6 +14,7 @@ public class KichThuoc {
 
     private Integer id;
     @NotBlank(message = "Không được để trống trường này")
-    private String ma,ten;
-    private Boolean trangThai;
+    private String ma, ten;
+    @PositiveOrZero(message = "Vui lòng chọn trạng thái")
+    private Integer trangThai;
 }
