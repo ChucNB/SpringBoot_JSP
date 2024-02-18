@@ -5,76 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d332cf17-0d22-473b-aa4e-5997e25a48f8" name="Changes" comment="Push current project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/helper/JSPHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/KhachHangRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/KichThuocRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/NhanVienRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/SanPhamRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/chart-area-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/chart-bar-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/chart-pie-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/demo/datatables-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/assets/img/error-404-monochrome.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/js/datatables-simple-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/38cf05df-97c3-40e8-b9d5-5dca67d579e0/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/HoaDonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-hoa-don/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-hoa-don/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-hoa-don/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/config/DIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/config/DIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KhachHangController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KhachHangController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KichThuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/KichThuocController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/NhanVienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/NhanVienController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/SanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/SanPhamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/MauSac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/MauSac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/NhanVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/SanPhamChiTiet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/SanPhamChiTiet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/SanPhamChiTietController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/HoaDonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/HoaDonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/HoaDon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/entities/HoaDon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/KichThuocRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/KichThuocRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/MauSacRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/MauSacRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/SanPhamChiTietRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/SanPhamChiTietRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/khachHang/KhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/khachHang/KhachHang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/mauSac/MauSac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/mauSac/MauSac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/nhanVien/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/nhanVien/NhanVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/sanPham/SanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/sanPham/SanPham.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-khach-hang/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-kich-thuoc/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-mau-sac/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-nhan-vien/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/hoaDonChiTiet/HoaDonChiTiet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/hoaDonChiTiet/HoaDonChiTiet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/sanPhamChiTiet/SanPhamChiTiet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/assignment1/repository/dto/sanPhamChiTiet/SanPhamChiTiet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/create.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/admin/quan-ly-san-pham/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/config/DIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/config/DIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/ChiTietSanPhamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/ChiTietSanPhamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KhachHangController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KhachHangController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KichThuocController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/KichThuocController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/MauSacController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/MauSacController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/NhanVienController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/NhanVienController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/SanPhamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/SanPhamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/MauSac.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/MauSac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/NhanVien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/NhanVien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/SanPhamChiTiet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/entities/SanPhamChiTiet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/ChiTietSanPhamController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/HoaDonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/controller/HoaDonController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/MauSacRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/MauSacRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/SanPhamChiTietRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/SanPhamChiTietRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/khachHang/KhachHang.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/khachHang/KhachHang.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/kichThuoc/KichThuoc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/mauSac/MauSac.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/mauSac/MauSac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/nhanVien/NhanVien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/nhanVien/NhanVien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/sanPham/SanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/sanPham/SanPham.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/hoaDonChiTiet/HoaDonChiTiet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/hoaDonChiTiet/HoaDonChiTiet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/sanPhamChiTiet/SanPhamChiTiet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poly/assignment1/repository/dto/sanPhamChiTiet/SanPhamChiTiet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +86,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/doanh/IdeaProjects/assignment1/src/main/webapp/view/admin/quan-ly-san-pham-chi-tiet",
+    "last_opened_file_path": "C:/Users/doanh/IdeaProjects/assignment1/src/main/webapp/view/admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,8 +105,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin\quan-ly-san-pham-chi-tiet" />
       <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin" />
+      <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin\quan-ly-san-pham-chi-tiet" />
       <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\webapp\view\admin\quan-ly-khach-hang" />
       <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\java\com\poly\assignment1\repository\dto" />
       <recent name="C:\Users\doanh\IdeaProjects\assignment1\src\main\java\com\poly\assignment1\repository\dto\khachHang" />
@@ -262,6 +215,7 @@
       <workItem from="1706854104839" duration="7106000" />
       <workItem from="1706861667129" duration="43278000" />
       <workItem from="1708126251446" duration="8230000" />
+      <workItem from="1708189988506" duration="12870000" />
     </task>
     <task id="LOCAL-00001" summary="Push current project">
       <option name="closed" value="true" />
@@ -278,8 +232,38 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="183cfdfd-1ef1-45e7-a5d9-d76d2163f3f6" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="183cfdfd-1ef1-45e7-a5d9-d76d2163f3f6">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -296,24 +280,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java</url>
-          <line>142</line>
-          <properties class="com.poly.assignment1.controller.ChiTietSanPhamController">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java</url>
-          <line>91</line>
-          <properties class="com.poly.assignment1.controller.ChiTietSanPhamController" method="index">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/MauSacController.java</url>
           <line>65</line>
@@ -350,6 +316,15 @@
           </properties>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/HoaDonController.java</url>
+          <line>61</line>
+          <properties class="com.poly.assignment1.controller.HoaDonController" method="index">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/resources/static/view/index.jsp</url>
           <line>8</line>
@@ -366,15 +341,31 @@
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/ChiTietSanPhamController.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="33" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/SanPhamChiTietController.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/HoaDonController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/HoaDonController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/poly/assignment1/controller/HoaDonController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.util.LinkedHashMap$Entry" memberName="value" />
+        <PinnedItemInfo parentTag="com.poly.assignment1.entities.HoaDon" memberName="khachHang" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

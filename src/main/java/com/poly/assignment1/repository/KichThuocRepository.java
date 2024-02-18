@@ -6,6 +6,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface KichThuocRepository extends JpaRepository<KichThuoc, Integer> {
     int ACTIVE = 1;
@@ -13,6 +15,8 @@ public interface KichThuocRepository extends JpaRepository<KichThuoc, Integer> {
 
 
     Page<KichThuoc> findByTrangThai(int trangThai, Pageable pageable);
+
+    List<KichThuoc> findByTrangThai(int trangThai);
 
     Page<KichThuoc> findByTenAndTrangThai(String ten, int trangThai, Pageable pageable);
 

@@ -67,9 +67,9 @@ public class DIController {
         List<SanPhamChiTiet> lst = new ArrayList<>();
 
 
-        lst.add(new SanPhamChiTiet(1, "SPCT1", getLSTKT().get(0), getLSTMS().get(0), getLSTSP().get(0), 100, 100000, true));
-        lst.add(new SanPhamChiTiet(2, "SPCT2", getLSTKT().get(1), getLSTMS().get(1), getLSTSP().get(1), 200, 200000, true));
-        lst.add(new SanPhamChiTiet(3, "SPCT3", getLSTKT().get(2), getLSTMS().get(2), getLSTSP().get(2), 300, 300000, true));
+        lst.add(new SanPhamChiTiet(1, "SPCT1", getLSTKT().get(0), getLSTMS().get(0), getLSTSP().get(0), 100, 100000d, 1));
+        lst.add(new SanPhamChiTiet(2, "SPCT2", getLSTKT().get(1), getLSTMS().get(1), getLSTSP().get(1), 200, 200000d, 1));
+        lst.add(new SanPhamChiTiet(3, "SPCT3", getLSTKT().get(2), getLSTMS().get(2), getLSTSP().get(2), 300, 300000d, 1));
         return lst;
     }
 
@@ -86,9 +86,9 @@ public class DIController {
     @Bean()
     public List<HoaDonChiTiet> getLSTHDCT() {
         List<HoaDonChiTiet> lst = new ArrayList<>();
-        lst.add(new HoaDonChiTiet(1, getLSTHD().get(0), getLSTSPCT().get(0), 1, getLSTSPCT().get(0).getDonGia(), true));
-        lst.add(new HoaDonChiTiet(1, getLSTHD().get(1), getLSTSPCT().get(1), 2, getLSTSPCT().get(1).getDonGia(), true));
-        lst.add(new HoaDonChiTiet(1, getLSTHD().get(2), getLSTSPCT().get(2), 3, getLSTSPCT().get(2).getDonGia(), true));
+        lst.add(new HoaDonChiTiet(1, getLSTHD().get(0), getLSTSPCT().get(0), 1, getLSTSPCT().get(0).getDonGia(), 1));
+        lst.add(new HoaDonChiTiet(1, getLSTHD().get(1), getLSTSPCT().get(1), 2, getLSTSPCT().get(1).getDonGia(), 1));
+        lst.add(new HoaDonChiTiet(1, getLSTHD().get(2), getLSTSPCT().get(2), 3, getLSTSPCT().get(2).getDonGia(), 1));
         return lst;
     }
 

@@ -14,8 +14,9 @@
 
     <div class="card col-4 m-auto mt-5">
         <div class="card-header">
-            Chỉnh sửa chi tiết sản phẩm "${obj.sanPham.ten}"
-            <a href="/admin/quan-ly-san-pham-chi-tiet/index" class="btn btn-primary float-end"><< Quay lại</a>
+            Chỉnh sửa CTSP "${obj.sanPham.ten}"
+            <a href="/admin/quan-ly-san-pham-chi-tiet/${obj.sanPham.id}/index" class="btn btn-primary float-end"><< Quay
+                lại</a>
         </div>
         <div class="card-body row">
             <div class="col-8 m-auto">
@@ -31,7 +32,7 @@
 
                     <div class="mt-3">
                         <label class="form-label">Mã sản phẩm chi tiết</label>
-                        <sf:input disabled="true" class="form-control" path="maSPCT"/>
+                        <sf:input class="form-control" path="maSPCT"/>
                         <sf:errors class="form-text text-danger" path="maSPCT"/>
                     </div>
                     <div class="mt-3">

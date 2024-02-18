@@ -86,10 +86,11 @@
                         <td>${item.ten}</td>
                         <td>${item.trangThai==0?"Hết hàng":"Còn hàng"}</td>
                         <td>
-                            <a href="/admin/quan-ly-san-pham-chi-tiet/${item.id}/index" class="btn btn-primary">Quản lý
+                            <a href="/admin/quan-ly-san-pham-chi-tiet/${item.id}/index" class="btn btn-outline-dark">Quản
+                                lý
                                 chi tiết</a>
-                            <a href="edit/${item.id}" class="btn btn-success">Chỉnh sửa</a>
-                            <a href="delete/${item.id}" class="btn btn-danger">Xóa</a>
+                            <a href="edit/${item.id}" class="btn btn-outline-primary">Chỉnh sửa</a>
+                            <a href="delete/${item.id}" class="btn btn-outline-danger">Xóa</a>
                         </td>
 
                     </tr>

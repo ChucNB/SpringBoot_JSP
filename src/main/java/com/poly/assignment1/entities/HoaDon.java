@@ -1,13 +1,32 @@
 package com.poly.assignment1.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.data.jpa.repository.Temporal;
+import org.springframework.format.annotation.NumberFormat;
 
 import java.sql.Date;
 import java.util.Collection;
 import java.util.Objects;
 
 @Entity
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class HoaDon {
+    public HoaDon(HoaDon hoaDon, Long tongThanhToan) {
+        this.id = hoaDon.id;
+        this.ngayMuaHang = hoaDon.ngayMuaHang;
+        this.trangThai = hoaDon.trangThai;
+        this.khachHang = hoaDon.khachHang;
+        this.tongHoaDon = hoaDon.tongHoaDon;
+        this.nhanVien = hoaDon.nhanVien;
+    }
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "ID", nullable = false)
@@ -27,64 +46,13 @@ public class HoaDon {
     @OneToMany(mappedBy = "hoaDon")
     private Collection<HoaDonChiTiet> hoaDonChiTietsById;
 
-    public Integer getId() {
-        return id;
+    @Transient
+    @NumberFormat(pattern = "###,###,###")
+    private Double tongHoaDon;
+
+    @PostLoad
+    public void tinhTongHoaDon() {
+        this.tongHoaDon = hoaDonChiTietsById.stream().map(hoaDonChiTiet -> hoaDonChiTiet.getDonGia() * hoaDonChiTiet.getSoLuong()).reduce((tong1, tong2) -> tong1 + tong2).orElse(0d);
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Date getNgayMuaHang() {
-        return ngayMuaHang;
-    }
-
-    public void setNgayMuaHang(Date ngayMuaHang) {
-        this.ngayMuaHang = ngayMuaHang;
-    }
-
-    public Integer getTrangThai() {
-        return trangThai;
-    }
-
-    public void setTrangThai(Integer trangThai) {
-        this.trangThai = trangThai;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        HoaDon hoaDon = (HoaDon) o;
-        return Objects.equals(id, hoaDon.id) && Objects.equals(ngayMuaHang, hoaDon.ngayMuaHang) && Objects.equals(trangThai, hoaDon.trangThai);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, ngayMuaHang, trangThai);
-    }
-
-    public KhachHang getKhachHang() {
-        return khachHang;
-    }
-
-    public void setKhachHang(KhachHang khachHang) {
-        this.khachHang = khachHang;
-    }
-
-    public NhanVien getNhanVien() {
-        return nhanVien;
-    }
-
-    public void setNhanVien(NhanVien nhanVien) {
-        this.nhanVien = nhanVien;
-    }
-
-    public Collection<HoaDonChiTiet> getHoaDonChiTietsById() {
-        return hoaDonChiTietsById;
-    }
-
-    public void setHoaDonChiTietsById(Collection<HoaDonChiTiet> hoaDonChiTietsById) {
-        this.hoaDonChiTietsById = hoaDonChiTietsById;
-    }
 }

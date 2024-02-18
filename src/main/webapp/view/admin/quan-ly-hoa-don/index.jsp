@@ -9,16 +9,14 @@
 <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 
 
 <div class="container-fluid">
 
     <div class="card m-2">
         <div class="card-header">
-            Quản lý chi tiết sản phẩm "${sp.ten}"<br>
-            <a href="/admin/quan-ly-san-pham-chi-tiet/${sp.id}/create"
-               class="my-3 btn btn-primary btn-sm col-auto">Thêm mới</a>
-
+            <p>Quản lý sản phẩm</p>
             <div class="row g-3 float-end">
                 <div class="col-auto">
                     <label for="status" class="col-form-label-sm">Trạng thái</label>
@@ -28,14 +26,15 @@
                         <select class="form-select-sm" id="status" aria-label="Default select example"
                                 onchange="this.form.submit()" name="active">
                             <option ${param.get("active")=="-1"?"selected":""} value="-1">Tất cả</option>
-                            <option ${param.get("active")=="1"?"selected":""} value="1">Còn hàng</option>
-                            <option ${param.get("active")=="0"?"selected":""} value="0">Hết hàng</option>
+                            <option ${param.get("active")=="1"?"selected":""} value="1">Đã thanh toán</option>
+                            <option ${param.get("active")=="0"?"selected":""} value="0">Chưa thanh toán</option>
                         </select>
                     </form>
                 </div>
 
 
             </div>
+            <a href="create" class="btn btn-primary btn-sm col-auto">Thêm mới</a>
         </div>
         <div class="card-body">
 
@@ -61,44 +60,29 @@
                         </a>
                     </th>
                     <th scope="col">
-                        <a href="${JSPHelper.initParam(param,"sortBy=maSPCT")}"
-                           class="link-${param.containsValue("maSPCT")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                            Mã sản phẩm chi tiết <c:if test='${param.containsValue("maSPCT")}'><i
+                        <a href="${JSPHelper.initParam(param,"sortBy=khachHangId")}"
+                           class="link-${param.containsValue("khachHangId")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                            Mã Khách hàng <c:if test='${param.containsValue("khachHangId")}'><i
                                 class="fa-solid fa-sort-${param.containsValue("DESC")?"up":"down"}"></i></c:if>
                         </a>
                     </th>
                     <th scope="col">
-                        <a href="${JSPHelper.initParam(param,"sortBy=kichThuocTen")}"
-                           class="link-${param.containsValue("kichThuocTen")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                            Kích thước <c:if test='${param.containsValue("kichThuocTen")}'><i
+                        <a href="${JSPHelper.initParam(param,"sortBy=ngayMuaHang")}"
+                           class="link-${param.containsValue("ngayMuaHang")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                            Ngày mua hàng <c:if test='${param.containsValue("ngayMuaHang")}'><i
                                 class="fa-solid fa-sort-${param.containsValue("DESC")?"up":"down"}"></i></c:if>
                         </a>
                     </th>
                     <th scope="col">
-                        <a href="${JSPHelper.initParam(param,"sortBy=mauSacTen")}"
-                           class="link-${param.containsValue("mauSacTen")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                            Màu sắc <c:if test='${param.containsValue("mauSacTen")}'><i
-                                class="fa-solid fa-sort-${param.containsValue("DESC")?"up":"down"}"></i></c:if>
-                        </a>
-                    </th>
-
-                    <th scope="col">
-                        <a href="${JSPHelper.initParam(param,"sortBy=soLuong")}"
-                           class="link-${param.containsValue("soLuong")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                            Số lượng <c:if test='${param.containsValue("soLuong")}'><i
-                                class="fa-solid fa-sort-${param.containsValue("DESC")?"up":"down"}"></i></c:if>
-                        </a>
-                    </th>
-                    <th scope="col">
-                        <a href="${JSPHelper.initParam(param,"sortBy=donGia")}"
-                           class="link-${param.containsValue("donGia")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                            Đơn giá <c:if test='${param.containsValue("donGia")}'><i
+                        <a href="${JSPHelper.initParam(param,"sortBy=tongHoaDon")}"
+                           class="link-${param.containsValue("tongHoaDon")?"primary":"dark"} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                            Tổng thanh toán <c:if test='${param.containsValue("tongHoaDon")}'><i
                                 class="fa-solid fa-sort-${param.containsValue("DESC")?"up":"down"}"></i></c:if>
                         </a>
                     </th>
 
                     <th scope="col">Trạng thái</th>
-                    <th scope="col">Thao Tác</th>
+                    <th scope="col">Hành động</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -106,15 +90,20 @@
                     <tr>
                         <th scope="row">${index.count}</th>
                         <td>${item.id}</td>
-                        <td>${item.maSPCT}</td>
-                        <td>${item.kichThuoc.ten}</td>
-                        <td>${item.mauSac.ten}</td>
-                        <td>${item.soLuong}</td>
-                        <td>${item.donGia}</td>
-                        <td>${item.trangThai==1?"Còn hàng":"Hết hàng"}</td>
-                        <td><a href="edit/${item.id}" class="btn btn-success">Chỉnh sửa</a>
-                            <a href="delete/${item.id}" class="btn btn-danger">Xóa</a>
+                        <td><a target="_blank" href="/admin/quan-ly-khach-hang/edit/${item.khachHang.id}"
+                        >${item.khachHang.ma}</a></td>
+                        <td><fmt:formatDate value="${item.ngayMuaHang}"
+                                            pattern="dd-MM-yyyy HH:mm:ss"></fmt:formatDate></td>
+                        <td><fmt:formatNumber pattern="###,###,###" value="${item.tongHoaDon}"/> VND</td>
+                        <td>${item.trangThai==0?"Chưa thanh toán":"Đã thanh toán"}</td>
+                        <td>
+                            <a href="/admin/quan-ly-san-pham-chi-tiet/${item.id}/index" class="btn btn-outline-dark">Quản
+                                lý
+                                chi tiết</a>
+                            <a href="edit/${item.id}" class="btn btn-outline-primary">Chỉnh sửa</a>
+                            <a href="delete/${item.id}" class="btn btn-outline-danger">Xóa</a>
                         </td>
+
                     </tr>
 
                 </c:forEach>

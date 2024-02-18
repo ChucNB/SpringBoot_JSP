@@ -18,6 +18,6 @@ public class HoaDonChiTiet {
     private HoaDon hoaDon;
     private SanPhamChiTiet sanPhamChiTiet;
     private int soLuong;
-    private int donGia;
-    private boolean trangThai;
+    private double donGia;
+    private int trangThai;
 }
