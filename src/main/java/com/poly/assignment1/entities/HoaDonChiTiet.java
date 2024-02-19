@@ -1,12 +1,26 @@
 package com.poly.assignment1.entities;
 
+import com.poly.assignment1.repository.SanPhamChiTietRepository;
+import com.poly.assignment1.repository.SanPhamRepository;
 import jakarta.persistence.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
 public class HoaDonChiTiet {
+
+
+//    @PreRemove
+//    private void rollbackQuantity() {
+//        int soLuongHienTai = sanPhamChiTiet.getSoLuong();
+//        int soLuongCongThem = soLuong;
+//        sanPhamChiTiet.setSoLuong(soLuongCongThem + soLuongHienTai);
+//
+//    }
+
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "ID", nullable = false)

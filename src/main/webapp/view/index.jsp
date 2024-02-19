@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="/view/css/styles.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body ${collapse}>
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <!-- Navbar Brand-->
-    <a class="navbar-brand ps-3" href="/">Cửa hàng JiuJiu</a>
+    <a class="navbar-brand ps-3" href="/ban-hang/index">Cửa hàng JiuJiu</a>
     <!-- Sidebar Toggle-->
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
             class="fas fa-bars"></i></button>
@@ -32,7 +32,7 @@
     <form
             action="/${string}"
             class="d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-        <div class="input-group ${fn:contains(string, "index")&&!fn:contains(string,"san-pham-chi-tiet" )?"":"d-none"}">
+        <div class="input-group ${fn:contains(string, "index")&&!fn:contains(string,"san-pham-chi-tiet" )&&!fn:contains(string,"ban-hang" )?"":"d-none"}">
 
             <input name="searchKey" value="${param.get('searchKey')}" class="form-control" type="text"
                    placeholder="Tìm theo tên ..."
@@ -66,11 +66,11 @@
             <div class="sb-sidenav-menu">
                 <div class="nav">
                     <div class="sb-sidenav-menu-heading">Cửa hàng</div>
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="/ban-hang/index">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                         Bán hàng
                     </a>
-                    <div class="sb-sidenav-menu-heading">Interface</div>
+                    <div class="sb-sidenav-menu-heading">Quản lý</div>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
                        aria-expanded="false" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
@@ -93,11 +93,24 @@
                         <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                         Khách hàng
                     </a>
-                    <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href="/admin/quan-ly-hoa-don/index">
+                    <div class="sb-sidenav-menu-heading">Thống kê</div>
+                    <a class="nav-link" href="/admin/quan-ly-hoa-don/index?sortBy=ngayMuaHang&sortOrder=DESC">
                         <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                         Hóa đơn
                     </a>
+                    <a class="nav-link collapsed d-none" href="#" data-bs-toggle="collapse" data-bs-target="#thong-ke"
+                       aria-expanded="false" aria-controls="thong-ke">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        Thống kê
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="thong-ke" aria-labelledby="headingOne"
+                         data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="/thong-ke/doanh-thu">Doanh thu</a>
+                            <a class="nav-link" href="/admin/quan-ly-mau-sac/index">Sản phẩm bán chạy</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
             <div class="sb-sidenav-footer">
@@ -124,9 +137,24 @@
         </footer>
     </div>
 </div>
+<div class="modal" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 <script src="/view/js/scripts.js"></script>

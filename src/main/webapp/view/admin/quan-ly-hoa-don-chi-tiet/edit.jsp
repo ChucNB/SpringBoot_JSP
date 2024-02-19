@@ -14,17 +14,18 @@
 
     <div class="card col-4 m-auto mt-5">
         <div class="card-header">
-            Thêm mới Chi tiết sản phẩm "${obj.sanPham.ten}"
-            <a href="/admin/quan-ly-san-pham-chi-tiet/index" class="btn btn-primary float-end"><< Quay lại</a>
+            Chỉnh sửa CTSP "${obj.sanPham.ten}"
+            <a href="/admin/quan-ly-san-pham-chi-tiet/${obj.sanPham.id}/index" class="btn btn-primary float-end"><< Quay
+                lại</a>
         </div>
         <div class="card-body row">
             <div class="col-8 m-auto">
 
-                <sf:form modelAttribute="obj" action="/admin/quan-ly-san-pham-chi-tiet/${obj.sanPham.id}/store"
-                         method="post">
+                <sf:form modelAttribute="obj"
+                         action="/admin/quan-ly-san-pham-chi-tiet/${obj.sanPham.id}/update/${obj.id}" method="post">
                     <div class="mt-3">
                         <label class="form-label">ID</label>
-                        <sf:input class="form-control" path="id"/>
+                        <sf:input disabled="true" class="form-control" path="id"/>
                         <sf:errors class="form-text text-danger" path="id"/>
                     </div>
 
@@ -45,7 +46,7 @@
                     </div>
 
                     <div class="mt-3">
-                        <label class="form-label">Kích thước</label>
+                        <label class="form-label">Màu sắc</label>
 
                         <sf:select path="mauSac.id" cssClass="form-select">
 
@@ -64,12 +65,17 @@
                         <sf:errors class="form-text text-danger" path="donGia"/>
                     </div>
                     <div class="mt-3">
-                        <sf:checkbox class="form-check-input" path="trangThai"/>
-                        <label class="form-check-label">Còn hàng</label>
+                        <label class="form-label">Còn hàng</label>
+                        <sf:select class="form-select" path="trangThai">
+                            <sf:option value="-1">---Chọn---</sf:option>
+                            <sf:option value="1">Còn hàng</sf:option>
+                            <sf:option value="0">Hết hàng</sf:option>
+                        </sf:select>
+                        <sf:errors class="form-text text-danger" path="trangThai"/>
                     </div>
 
                     <div class="mt-3 text-end">
-                        <sf:button class="btn btn-success">Thêm mới</sf:button>
+                        <sf:button class="btn btn-success">Chỉnh sửa</sf:button>
                     </div>
                 </sf:form>
             </div>

@@ -6,6 +6,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface KhachHangRepository extends JpaRepository<KhachHang, Integer> {
     int ACTIVE = 1;
@@ -20,4 +22,7 @@ public interface KhachHangRepository extends JpaRepository<KhachHang, Integer> {
 
 
     Object getByMaAndTen(String ma, String ten);
+
+    List<KhachHang> findAllByTrangThaiOrderByTenDesc(Integer trangThai);
+
 }

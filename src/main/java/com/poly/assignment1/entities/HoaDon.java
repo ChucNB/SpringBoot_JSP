@@ -8,7 +8,7 @@ import lombok.Setter;
 import org.springframework.data.jpa.repository.Temporal;
 import org.springframework.format.annotation.NumberFormat;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.Collection;
 import java.util.Objects;
 
